@@ -17,7 +17,47 @@ const example = {
   "gender": "F"
 }
 
-// Write your intern objects here:
+// Write your intern objects here: 
+const Intern1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+}
+
+const Intern2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  speak: function() {
+    console.log('Hello, my name is Kennan')
+  }
+}
+
+const Intern3 = {
+  "id": 3,
+  "name": "Kevan",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+}
+
+const Intern4 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+}
+
+const Intern5 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums: function(a, b){
+    console.log(a * b)
+  }
+}
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -25,20 +65,32 @@ const example = {
 
 // Mitzi's name
 
+console.log(Intern1["name"])
+
 // Kennan's ID
+
+console.log(Intern2['id'])
 
 // Keven's email
 
+console.log(Intern3['email'])
+
 // Gannie's name
+
+console.log(Intern4['name'])
 
 // Antonietta's Gender
 
+console.log(Intern5['gender'])
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+
+console.log(Intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+
+console.log(Intern5.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -49,7 +101,10 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name: 'Susan',
+  age: 70,
+}
 
 // Log the parent object's name
 
